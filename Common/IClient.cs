@@ -1,7 +1,7 @@
 ﻿namespace Common
 {
-    public interface IClient
+    public interface IClient : IDisposable
     {
-        int Identificator { get; set; }
+        void SendMessage(string msg);
     }
 }
